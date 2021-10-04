@@ -1,0 +1,25 @@
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 70px;
+  background-color: #52307c;
+  &__left {
+    width: 25%;
+    display: flex;
+    justify-content: space-around;
+  }
+  &__right {
+    width: 10%;
+    display: flex;
+    justify-content: space-around;
+  }
+  a,
+  p {
+    text-decoration: none;
+    color: white;
+    font-size: 25px;
+    margin-bottom: 0px;
+    cursor: pointer;
+  }
+}

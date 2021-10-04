@@ -1,0 +1,303 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin-bottom: 16px;
+}
+
+.navbar {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 70px;
+  background-color: #52307c;
+}
+.navbar__left {
+  width: 25%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+.navbar__right {
+  width: 10%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+.navbar a,
+.navbar p {
+  text-decoration: none;
+  color: white;
+  font-size: 25px;
+  margin-bottom: 0px;
+  cursor: pointer;
+}
+
+footer {
+  background-color: #52307c;
+  text-align: center;
+  padding: 20px;
+  color: white;
+}
+
+.modal {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: fixed;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  top: 0;
+  width: 100vw;
+  height: 100vh;
+}
+.modal__click {
+  top: 0;
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  background-color: rgba(0, 0, 0, 0.7);
+}
+.modal .login {
+  background-color: white;
+  z-index: 99;
+  position: relative;
+  width: 600px;
+  height: 400px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.modal .login .checkmark {
+  background-image: url("../images/checkmark.png");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.modal .login__header {
+  width: 50%;
+  text-align: start;
+}
+.modal .login__form {
+  height: 150px;
+  width: 50%;
+}
+.modal .login__form__input {
+  margin-bottom: 30px;
+}
+.modal .login__form__input label,
+.modal .login__form__input input {
+  display: block;
+}
+.modal .login__form__input label {
+  font-size: 20px;
+}
+.modal .login__form__input input {
+  height: 30px;
+  width: 100%;
+  padding-left: 5px;
+}
+.modal .login__button {
+  margin-top: 10px;
+  background-color: #52307c;
+  color: white;
+  padding: 10px;
+  font-size: 20px;
+  border-radius: 40px;
+  cursor: pointer;
+}
+
+.home__hero {
+  background-image: -webkit-gradient(linear, left top, right top, from(rgba(0, 0, 0, 0.5)), to(rgba(0, 0, 0, 0.5))), url(../images/hero.jpeg);
+  background-image: linear-gradient(to right, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../images/hero.jpeg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 500px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: white;
+}
+.home__hero__header {
+  font-size: 60px;
+}
+.home__hero__text {
+  font-size: 30px;
+}
+.home__featured {
+  margin-top: 30px;
+}
+.home__featured__header {
+  font-size: 40px;
+  text-align: center;
+}
+.home__featured__phones {
+  width: 75%;
+  margin: 60px auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.home__featured__phones__phone {
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 30%;
+  height: 400px;
+}
+.home__featured__phones__phone--iphone {
+  background-image: url("../images/phones/iphone-13.png");
+}
+.home__featured__phones__phone--samsung {
+  background-image: url("../images/phones/galaxy-flip.jpg");
+}
+.home__featured__phones__phone--oneplus {
+  background-image: url("../images/phones/oneplus-9.webp");
+}
+
+.products__header {
+  text-align: center;
+  font-size: 60px;
+  margin-bottom: 20px;
+}
+.products__phones {
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  width: 50%;
+}
+.products__phones .phone {
+  width: 48%;
+  margin-bottom: 30px;
+  padding: 10px;
+  border: 1px solid #52307c;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.products__phones .phone__name {
+  font-size: 30px;
+  text-align: center;
+  margin-bottom: 10px;
+}
+.products__phones .phone__info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  margin-bottom: 10px;
+}
+.products__phones .phone__info__picture {
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  height: 300px;
+  width: 50%;
+}
+.products__phones .phone__info__picture--iphone13 {
+  background-image: url("../images/phones/iphone-13.png");
+}
+.products__phones .phone__info__picture--iphone13pro {
+  background-image: url("../images/phones/iphone-13-pro.png");
+}
+.products__phones .phone__info__picture--galaxy-flip {
+  background-image: url("../images/phones/galaxy-flip.jpg");
+}
+.products__phones .phone__info__picture--galaxy-fold {
+  background-image: url("../images/phones/galaxy-fold.webp");
+}
+.products__phones .phone__info__picture--oneplus-9 {
+  background-image: url("../images/phones/oneplus-9.webp");
+}
+.products__phones .phone__info__picture--oneplus-9pro {
+  background-image: url("../images/phones/oneplus-9pro.webp");
+}
+.products__phones .phone__info__right {
+  width: 40%;
+}
+.products__phones .phone__info__right__description {
+  font-size: 20px;
+}
+.products__phones .phone__info__right__price {
+  font-size: 25px;
+}
+.products__phones .phone__learn-more {
+  border: 1px solid #52307c;
+  background-color: #52307c;
+  color: white;
+  text-align: center;
+  width: 75%;
+  padding: 8px;
+}
